@@ -283,8 +283,7 @@ try {
 			}
 		}
 		const botNumber = denz.user.jid
-		const ownerNumber = ["6287832147584@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
-                const ownerNumberr = ["6285719579904@s.whatsapp.net",`${NomorOwnerr}@s.whatsapp.net`]
+		const ownerNumber = ["6287832147584@s.whatsapp.net","6285719579904@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
         const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? denz.user.jid : isGroup ? mek.participant : mek.key.remoteJid
 		const senderNumber = sender.split("@")[0] 
@@ -985,7 +984,6 @@ reply('http://youtube.com/dcodedenpa')
         dtod = "6287832147584@s.whatsapp.net"
         dtod = "6285719579904@s.whatsapp.net"
      otod = `${settings.NomorOwner}@s.whatsapp.net`
-     otod = `${settings.NomorOwnerr}@s.whatsapp.net`
         stod = `${sender}`
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? 'unknown' : stst.status
