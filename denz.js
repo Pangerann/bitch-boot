@@ -110,6 +110,7 @@ waktuafk = 'Nothing'
 alasanafk = 'Nothing'
 NamaBot = settings.NamaBot
 NomorOwner = settings.NomorOwner
+NomorOwner2 = settings.NomorOwner2
 NamaOwner = settings.NamaOwner
 multi =false
 nopref = false
