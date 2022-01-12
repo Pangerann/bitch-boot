@@ -110,7 +110,6 @@ waktuafk = 'Nothing'
 alasanafk = 'Nothing'
 NamaBot = settings.NamaBot
 NomorOwner = settings.NomorOwner
-NomorOwner2 = settings.NomorOwner2
 NamaOwner = settings.NamaOwner
 multi =false
 nopref = false
@@ -284,8 +283,7 @@ try {
 			}
 		}
 		const botNumber = denz.user.jid
-		const ownerNumber = ["6287832147584@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
-                const ownerNumber2 =["6285719579904@s.whatsapp.net",`${NomorOwner2}@s.whatsapp.net`]
+		const ownerNumber = ["6287832147584@s.whatsapp.net","6285719579904@s.whatsapp.net", `${NomorOwner}@s.whatsapp.net`,`${NomorOwner2}@s.whatsapp.net`]
         const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? denz.user.jid : isGroup ? mek.participant : mek.key.remoteJid
 		const senderNumber = sender.split("@")[0]
