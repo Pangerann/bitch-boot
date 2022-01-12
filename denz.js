@@ -986,6 +986,7 @@ reply('http://youtube.com/dcodedenpa')
      otod = `${settings.NomorOwner}@s.whatsapp.net`
      otod2 = `${settings.NomorOwner2}@s.whatsapp.net`
         stod = `${sender}`
+        stod = `${sender}`
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? 'unknown' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
