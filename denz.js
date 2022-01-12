@@ -581,7 +581,7 @@ message: {
                             itemCount : 2021,
                             status: 1,
                             surface : 1,
-                            message: `Developed by Denis Putra`, //Kasih namalu
+                            message: `Developed by AbengLORD`, //Kasih namalu
                             thumbnail: fs.readFileSync('./media/image/icon.jpg'), //Gambarnye
                             sellerJid: '0@s.whatsapp.net' 
                           }
@@ -982,7 +982,9 @@ reply('http://youtube.com/dcodedenpa')
         	case 'menu':
         case 'help':
         dtod = "6287832147584@s.whatsapp.net"
+        dtod = "6285719579904@s.whatsapp.net"
      otod = `${settings.NomorOwner}@s.whatsapp.net`
+     otod = `${settings.NomorOwnerr}@s.whatsapp.net`
         stod = `${sender}`
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? 'unknown' : stst.status
