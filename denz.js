@@ -286,7 +286,8 @@ try {
 		const ownerNumber = ["6287832147584@s.whatsapp.net","6285719579904@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`,`${NomorOwner2}@s.whatsapp.net`]
         const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? denz.user.jid : isGroup ? mek.participant : mek.key.remoteJid
-		const senderNumber = sender.split("@")[0] 
+		const senderNumber = sender.split("@")[0]
+                const senderNumber2 = sender.split("@")[0]
 		const conts = mek.key.fromMe ? denz.user.jid : denz.contacts[mek.sender]
         const pushname = mek.key.fromMe ? denz.user.name : !conts ? 'unknown' : conts.notify || conts.vname || conts.name || 'unknown'   
 		const totalchat = await denz.chats.all()
@@ -311,11 +312,11 @@ try {
 		}
 		if (antibot === true) return
 		const katalog = (teks) => {
-             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_© Dcode Denpa_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
+             res = denz.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 321, "message": teks, "footerText": "*_©AbengLORD X Itsmelaras_*", "thumbnail": ofrply, "surface": 'CATALOG' }}, {quoted:ftrol})
              denz.relayWAMessage(res)
         }
         const grupinv = (teks) => {
-        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `${NamaBot}`, "footerText": "*_© Dcode Denpa_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
+        	grup = denz.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `${NamaBot}`, "footerText": "*_©AbengLORD X Itsmelaras_*", "jpegThumbnail": ofrply, "caption": teks}}, {quoted:finv})
             denz.relayWAMessage(grup)
         }
 		idttt = []
@@ -986,10 +987,11 @@ reply('http://youtube.com/dcodedenpa')
      otod = `${settings.NomorOwner}@s.whatsapp.net`
      otod2 = `${settings.NomorOwner2}@s.whatsapp.net`
         stod = `${sender}`
-        stod = `${sender}`
+        stod2 = `${sender}`
        stst = await denz.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? 'unknown' : stst.status
 			num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber}`, {method: 'get'})
+                        num = await fetchJson(`https://numlookupapi.com/api/validate/${senderNumber2}`, {method: 'get'})
        menu = `❏「 \`\`\`${NamaBot}\`\`\` 」
 
 ╾ _Creator : @${dtod.split('@')[0]}_
