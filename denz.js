@@ -283,7 +283,8 @@ try {
 			}
 		}
 		const botNumber = denz.user.jid
-		const ownerNumber = ["6287832147584@s.whatsapp.net","6285719579904@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`,`${NomorOwner2}@s.whatsapp.net`]
+		const ownerNumber = ["6287832147584@s.whatsapp.net",`${NomorOwner}@s.whatsapp.net`]
+                const ownerNumber2 =["6285719579904@s.whatsapp.net",`${NomorOwner2}@s.whatsapp.net`]
         const isGroup = from.endsWith('@g.us')
 		const sender = mek.key.fromMe ? denz.user.jid : isGroup ? mek.participant : mek.key.remoteJid
 		const senderNumber = sender.split("@")[0]
@@ -299,6 +300,7 @@ try {
 		const groupDesc = isGroup ? groupMetadata.desc : ''
 		const groupOwner = isGroup ? groupMetadata.owner : ''
 		const isOwner = ownerNumber.includes(sender)
+                const isOwner = ownerNumber2.includes(sender)
 		const isGroupAdmins = groupAdmins.includes(sender) || false
 		const isKickArea = isGroup ? kickarea.includes(from) : false
 		const isAntiLink = isGroup ? antilink.includes(from) : false
